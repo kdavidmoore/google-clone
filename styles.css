@@ -1,0 +1,128 @@
+body {
+	font-family: sans-serif;
+}
+
+#header {
+	position: relative;
+	font-size: 13px;
+	float: right;
+	height: 30px; /* height must be 30px */
+	line-height: 30px; /* every time text is inside this div, it must take up 30px; only works with static height */
+	margin: 15px 15px 0 0;
+}
+
+#app-icons {
+	position: absolute;
+	top: 44px;
+	right: 0;
+	border: 1px solid #ccc;
+	box-shadow: 0 2px 10px rgba(0,0,0,.2);
+	border-radius: 2px;
+}
+
+.icon {
+	background-image: url('https://ssl.gstatic.com/gb/images/p1_fd66c382.png');
+	width: 64px;
+	height: 64px;
+	float: left;
+}
+
+.one {
+	background-position: 0 -1449px;
+}
+
+.header-item {
+	float: left;
+	list-style-type: none;
+	margin-right: 10px; /* spaces the li items out a bit */
+}
+
+.header-item.grid {
+	background-image: url('https://ssl.gstatic.com/gb/images/v1_8758f7bb.png'); /* using Google's sprite */
+	background-position: -35px -311px; /* sets the sprite's position */
+	height: 30px;
+	width: 30px;
+	opacity: .55;
+}
+
+.header-item.bell {
+	background-image: url('https://ssl.gstatic.com/gb/images/v1_8758f7bb.png'); /* using Google's sprite */
+	background-position: -35px -1675px; /* sets the sprite's position */
+	background-color: #aaa;
+	border-radius: 50%;
+	margin: 5px;
+	text-align: center;
+	height: 20px;
+	width: 20px;
+	margin: 5px 10px 0 0;
+	box-sizing: border-box; /* element stays the same size no matter how much padding you add becasue div + padding = width */
+	padding: 0 2px; /* could also use % for width and padding (e.g., 2% padding + 18% content = 20% width) and get rid of box-sizing */
+}
+
+.header-item.letter {
+	height: 30px;
+	width: 30px;
+	background-color: #aaa;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+}
+
+#google-logo {
+	height: 170px; /* regardless of screen size, google logo will be in the same place */
+	text-align: center; /* div is already 100% of screen, so margin:auto will do nothing */
+	padding-top: 150px;
+}
+
+#google-logo img {
+	height: 92px;
+	margin-top: 40px;
+}
+
+#search-form {
+	width: 500px;
+	text-align: center; /* puts the input element in the center of the page */
+	position: relative;
+	margin: auto;
+}
+
+input[type='text'] {
+	width: 500px;
+	height: 36px;
+	font-size: 18px;
+	padding-left: 5px;
+}
+
+#mic {
+	position: absolute; /* looks for first parent div with position:relative, which is search-form */
+	right: 0;
+	top: 7px; /* sets mic position relative to search-form */
+}
+
+#mic img {
+	height: 26px;
+}
+
+#search-buttons {
+	text-align: center;
+}
+
+input[type='button'] {
+	width: 150px;
+	height: 40px;
+	background-color: #f2f2f2;
+	color: #757575;
+	border: 1px solid #f2f2f2;
+	border-radius: 2px;
+	font-family: arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 30px 2px;
+}
+
+input[type='button']:hover {
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	border-color: #c6c6c6;
+	color: #222;
+}
