@@ -11,24 +11,71 @@ body {
 	margin: 15px 15px 0 0;
 }
 
+#triangle {
+
+}
+
 #app-icons {
+	display: none;
 	position: absolute;
 	top: 44px;
 	right: 0;
 	border: 1px solid #ccc;
 	box-shadow: 0 2px 10px rgba(0,0,0,.2);
 	border-radius: 2px;
+	width: 240px;
+    padding: 20px 0 20px 20px;
 }
+
 
 .icon {
 	background-image: url('https://ssl.gstatic.com/gb/images/p1_fd66c382.png');
+	background-repeat: no-repeat;
 	width: 64px;
 	height: 64px;
 	float: left;
+	padding-left: 10px;
+	margin-bottom: 10px;
 }
 
-.one {
+.icon:hover {
+	border-color: #c6c6c6;
+}
+
+.icon.one {
 	background-position: 0 -1449px;
+}
+
+.icon.two {
+	background-position: 0 -276px;
+}
+
+.icon.three {
+	background-position: 0 -69px;
+}
+
+.icon.four {
+	background-position: 0 -138px;
+}
+
+.icon.five {
+	background-position: 0 -1380px;
+}
+
+.icon.six {
+	background-position: 0 -1311px;
+}
+
+.icon.seven {
+	background-position: 0 -621px;
+}
+
+.icon.eight {
+	background-position: 0 -1518px;
+}
+
+.icon.nine {
+	background-position: 0 -1794px;
 }
 
 .header-item {
